@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-section{
+    width: 60%;
+    padding: 5%;
+}
+.img-wrapper{
+    position: relative;
+    margin-bottom: 20px;
+}
+.img-wrapper img{
+    width: 100%;
+}
+.img-wrapper video{
+    width: 100%;
+    
+}
+.blog-date{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    padding: 5px 15px;
+    font-weight: 700;
+    background-color: #81c83c;
+}
+.blog-date a{
+    text-decoration: none;
+    color: #fff;
+}
+.post-img-text{
+    width: 100%;
+}
+.post-title{
+    font-size: 24px;
+    color: #323232;
+}
+.post-title h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.post-title h2:hover{
+    color: #81c83c;
+}
+.post-title p{
+    font-size: 12px;
+    color: #959595;
+}
+.post-title span a{
+    text-decoration: none;
+    color: #323232;
+}
+.post-body p{
+    margin-top: 20px;
+    color: #6A6A6A;
+}
+.post-img-text button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #81c83c;
+    border-radius: 30px;
+    background: none;
+    margin-bottom: 50px;
+}
+.post-img-text button a{
+    text-decoration: none;
+    color: #81c83c;
+    font-size: 18px;
+    
+}
+.post-img-text button:hover{
+    background-color: #81c83c;
+}
+.post-img-text button:hover a{
+    color: white;
+}
+/* end left section */
+.right-section{
+    width: 40%;
+    padding: 5% 0;
+   
+}
+.right-section h2{
+    font-weight: 400;
+    color: #323232;
+    font-size: 25px;
+}
+.right-section input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    color: #959595;
+    border: 1px solid #959595;
+}
+/* img text */
+
+.combo{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.combo img{
+    width: 150px;
+    height: 150px;
+}
+.right-text{
+    margin-left: 15px;
+    line-height: 40px;
+    color: #6A6A6A;
+}
+.right-section p{
+    line-height: 30px;
+}
+.right-section a{
+    text-decoration: none;
+    color: #323232;
+}
+
+
+.categories{
+    color: #323232;
+    margin-top: 20px;
+    line-height: 50px;
+}
+.categories p{
+    border-bottom: 1px solid #b5b3b3;
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+}
+.categories span{
+    color: #6A6A6A;
+}
+
+@media screen and (min-width:0px) and (max-width:426px){
+    section{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section{
+        width: 100%;
+    }
+}

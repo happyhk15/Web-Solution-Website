@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ /* our service start */ 
+.our-services{
+	margin-top: 100px;
+	padding: 10px 100px;
+	position: relative;
+}
+.section-title{
+	display: flex;
+	width: 100%;
+
+}
+.our-services li{
+	display: flex;
+	list-style-type: none;
+	font-size: 25px;
+	color: #959595;
+	z-index: 2;
+}
+.service-title:hover .fa-gear{
+	color: #81c83c;
+}
+.outer-title {
+	position: relative;
+	display: inline-block;
+}
+.iner-gear{
+	margin-top: -10px;
+}
+.iner-gear li{
+	font-size: 15px;
+	padding: 4px;
+}
+.iner-title{
+	position: absolute;
+	top: 15px;
+	left: 148px;
+	margin-top: -10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #959595;
+}
+.iner-title h5{
+	height: 34px;
+	font-size: 30px;
+	color: #323232;
+	
+}
+/*our -service End...  services start  */
+.services{
+	margin: 5% 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	color: #323232;
+}
+.service-box{
+	width: 25%;
+	padding: 1%;
+	line-height: 30px;
+    padding: 5% 2%;
+    color: #6A6A6A;
+	animation-name: pricing-data;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.service-box h3{
+	color: #323232;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+}
+.service-box i{
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+/* fix-img start */
+.fix-img{
+	width: 100%;
+	background: url(../image/parallax3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	/* margin-bottom: 100px; */
+}
+.parallax{
+	width: 100%;
+	background: url(../image/overaly.png);
+	
+	padding: 100px;
+	/* position: absolute;
+	
+	left: 0;
+	top: 0; */
+	text-align: center;
+}
+.parallax img{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	border: 1px solid #8e8e8e;
+	border-radius: 50%;
+	margin-bottom: 50px;
+}
+.parallax p{
+	text-align: center;
+	margin: auto;
+	color: #fff;
+	font-size: 16px;
+	max-width: 800px;
+	line-height: 24px;
+	margin-bottom: 35px;
+}
+.parallax span{
+	color: #81c83c;
+	padding: 0 10px;
+	font-size: 20px;
+}
+.parallax h3, h4{
+	color: #fff;
+	letter-spacing: 0.5px;
+}
+/* fix img end */
+.pricing-table{
+	width: 100%;
+	padding: 100px;
+}
+.pricing-head ul{
+	width: 100%;
+	display: flex;
+}
+.pricing-head li{
+	list-style-type: none;
+}
+.pricing-head:hover i{
+	color: #81c83c;
+}
+.pricing-head i{
+	font-size: 34px;
+	color: #959595;
+	border-right: 2px solid #e7e7e7;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.pricing-head h2{
+	color: #323232;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	margin-top: -5px;
+}
+.pricing-head h6{
+	font-weight: 200;
+	color: #959595;
+	letter-spacing: 0.5px;
+}
+/* pricing head end */
+
+.pricing-body{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.monthly-plan{
+	width: 20%;
+	border: 1px solid #dedede;
+	padding: 20px 0;
+	text-align: center;
+	margin: 40px 25px;
+	position: relative;
+	animation-name: pricing-data;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.a1{
+	animation-delay: 0.5s;
+}
+.a2{
+	animation-delay: 1s;
+}
+.a3{
+	animation-delay: 1.5s;
+}
+.a4{
+	animation-delay: 2s;
+}
+
+@keyframes pricing-data{
+	0%{
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.plan-name{
+	color: #959595;
+	font-weight: 700;
+	line-height: 30px;
+	font-size: 24px;
+	text-align: center;
+	padding: 20px;
+}
+
+.dollar{
+	font-size: 40px;
+	margin-bottom: 30px;
+	position: relative;
+	background: #f2f2f2;
+	color: #6A6A6A;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+}
+/* for triangle */
+.dollar::after{
+	bottom: -30px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-width: 15px;
+    border-top-color: #f2f2f2;
+    left: 50%;
+    margin-left: -16px;
+}
+.active-plan::after{
+	border-top-color: #81c83c;
+}
+.pricing-body p{
+	border-top: 1px solid #dedede;
+	padding: 20px;
+	font-size: 15px;
+	
+}
+.pricing-body p:first-child{
+	border-top: none;
+}
+
+.pricing-btn button{
+	width: 150px;
+	border: 2px solid #81c83c;
+	border-radius: 25px;
+	padding: 10px 20px;
+	z-index: 2;
+	position: absolute;
+	bottom: -20px;
+	right: 52px;
+	
+}
+
+.monthly-plan:hover button{
+	background-color: #81c83c;
+}
+.monthly-plan:hover button a{
+	color: white;
+}
+.active-plan{
+	background-color: #81c83c;
+	color: white;
+}
+.active-plan a{
+	color: white !important;
+}
+.pricing-btn a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #81c83c;
+}
+.monthly-plan:hover .dollar{
+	background-color: #81c83c;
+	color: white;
+}
+.monthly-plan:hover .dollar::after{
+	border-top-color: #81c83c;
+}
+/* monthly plan end */
+
+/* join us */
+.join-us{
+	width: 100%;
+	padding: 50px 100px;
+	background-color: #81c83c;
+	color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+}
+.join-us button{
+	background: none;
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+.join-us a{
+	text-decoration: none;
+	color: white;
+}
+.join-us button:hover{
+	background-color: white;
+}
+.join-us button:hover a{
+	color: #81c83c;
+}
+@media screen and (min-width:0px) and (max-width:426px){
+	.our-services{
+		padding: 20px;
+	}
+	.service-title{
+		padding: 0 70px;
+	}
+	.iner-title{
+		top: 25px;
+		left: 135px;
+	}
+	.services{
+		flex-direction: column;
+	}
+	.service-box{
+		width: 100%;
+	}
+	/* fix-img */
+	.parallax{
+		padding: 100px 20px;
+	}
+	/* pricing table */
+	.pricing-table{
+		padding: 50px 20px;
+	}
+	.pricing-body{
+		flex-direction: column;
+	}
+	.monthly-plan{
+		width: 100%;
+		margin: 50px auto;
+	}
+	.pricing-btn button{
+		right: 120px;
+	}
+	.join-us{
+        flex-direction: column;
+        padding: 5%;
+        text-align: center;
+    }
+    .join-us h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .join-us button{
+        margin: auto;
+        width: 140px;
+        padding: 8px;
+    }
+    .join-us button a{
+        font-size: 14px;
+    }
+}
+	

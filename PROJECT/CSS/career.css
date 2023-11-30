@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section */
+section{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* left section */
+.left-section{
+    width: 60%;
+    color: #323232;
+}
+.left-section h2{
+    font-weight: 300;
+    font-size: 30px;
+    border-bottom: 2px solid #81c83c;
+}
+.manager p{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #6A6A6A;
+}
+.job-table{
+    width: 100%;
+    border: 1px solid #a8a7a7;
+    margin: 30px 0;
+}
+.job-table table{
+    border: 1px solid #a8a7a7;
+}
+.jhead{
+    border-bottom: none;
+}
+.job-table thead{
+    display: flex;
+    background-color: #f7f5f5;
+    padding: 10px;
+    color: #6A6A6A;
+    border-bottom: 1px solid #a8a7a7;
+    /* color: #959595; */
+}
+.job-table h3, i{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.job-table tbody p, i{
+    display: inline-block;
+    margin: 8px;
+    color: #6A6A6A;
+    font-size: 18px;
+}
+
+/* button */
+.left-section button{
+    padding: 8px 12px;
+    border: 1px solid #81c83c;
+    border-radius: 30px;
+    background: none;
+    margin-bottom: 30px;
+}
+.left-section button a{
+    text-decoration: none;
+    color: #81c83c;
+    font-size: 20px;
+}
+.btn-icon {
+    text-decoration: none;
+    color: #81c83c !important;
+    font-size: 20px;
+}
+.left-section button:hover{
+    background-color: #81c83c;
+}
+.left-section button:hover a{
+    color: white;
+}
+.left-section button:hover i{
+    color: white;
+}
+/* right section */
+.right-section{
+    width: 30%;
+}
+.right-section h2{
+    color: #323232;
+    font-weight: 300;
+    font-size: 30px;
+}
+.right-section p{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #6A6A6A;
+    line-height: 20px;
+}
+.join-us{
+	width: 100%;
+	padding: 50px 100px;
+	background-color: #81c83c;
+	color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+}
+.join-us button{
+	background: none;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+.join-us a{
+	text-decoration: none;
+	color: white;
+}
+.join-us button:hover{
+	background-color: white;
+}
+.join-us button:hover a{
+	color: #81c83c;
+}
+
+@media screen and (min-width:0px) and (max-width:426px){
+    section{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .job-table tbody p, i {
+        margin: 4px;
+        font-size: 12px;
+    }
+    .right-section{
+        width: 100%;
+    }
+    .join-us{
+        flex-direction: column;
+        padding: 5%;
+        text-align: center;
+    }
+    .join-us h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .join-us button{
+        margin: auto;
+        width: 140px;
+        padding: 8px;
+    }
+    .join-us button a{
+        font-size: 14px;
+    }
+}
